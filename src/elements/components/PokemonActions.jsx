@@ -12,7 +12,7 @@ export default function PokemonActions({ pokemonForCatch }) {
     fetch(`http://127.0.0.1:5500/define_pokemon/${name}`, {method: "POST"})
       .then(responseBotPython => responseBotPython.json())
       .then(responseMenssage => console.log(responseMenssage))
-      .catch(err => console.error(err))
+      .catch(() => alert("Você provavelmente não tem o executavel instalado nem rodando a aplicaçao"))
   }
 
   const handleStop = () => {

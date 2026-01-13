@@ -11,7 +11,7 @@ export default function SearchBar({ setPokemonForCatch, fetchError, setFerchErro
       .then(responseApi => responseApi.json())
       .then(data => setPokemonList(data.results))
       .catch(error => setFerchError(error));
-  }, [offSetPokemon]);
+  }, [offSetPokemon, setFerchError]);
 
   function handleSearchPokemon(event) {
     event.preventDefault()
