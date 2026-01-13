@@ -27,7 +27,7 @@ class ActionsForCapturePokemon:
             pyautogui.press('4')
         time.sleep(0.2)
 
-  def botMovement():
+  def botMovement(self):
       pyautogui.keyUp('a')
       pyautogui.keyDown('d')
       time.sleep(1)
@@ -63,7 +63,7 @@ class ActionsForCapturePokemon:
             pyautogui.press('1')
         time.sleep(1)
   
-  def getCropArea():
+  def getCropArea(self):
     return getCoordenadas.loadCoords()
   
   def getPokemonHunted(self):
